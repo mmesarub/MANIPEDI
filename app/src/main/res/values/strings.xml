@@ -1,0 +1,73 @@
+<resources>
+
+    <string name="app_name">gestionmanicura</string>
+    <string name="empresa">Sépalo. Centro de Manicura y Pedicura</string>
+
+    <!-- region: login -->
+    <string name="bienvenida">¡Bienvenido! \n Inicia sesión para reservar tu cita.</string>
+    <string name="email">Email:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="telefono">Teléfono:</string>
+    <string name="intro_email">Introduce el email.</string>
+    <string name="contraseña">Contraseña:</string>
+    <string name="olvido">¿Olvidaste tu contraseña?</string>
+
+    <!-- region: BOTONES -->
+    <string name="login_button">INICIA SESIÓN</string>
+    <string name="Registro_button">REGISTRATE</string>
+    <string name="google">INGRESA CON GOOGLE</string>
+    <!-- endregion -->
+
+    <!-- endregion -->
+
+    <!-- region: cierre de sesion -->
+    <string name="cierresesion">CIERRA SESIÓN</string>
+    <!-- endregion -->
+
+    <!-- region: HOME -->
+    <string name="cita">ESCOJA UNA CITA</string>
+    <string name="recuerda">RECORDATORIO</string>
+    <string name="eliminacita">ELIMINAR CITA</string>
+
+    <!-- endregion -->
+
+    <!-- region: COGER CITA -->
+    <string name="producto">ESCOGE UN PRODUCTO</string>
+    <string name="servicio">ESCOGE UN SERVICIO</string>
+    <string name="obligatorio">ELECCION OBLIGATORIA</string>
+
+    <string-array name="productos_array">
+        <item>Pulsa aquí</item>
+        <item>Manicura</item>
+        <item>Pedicura</item>
+    </string-array>
+
+    <string-array name="servicios_manicura">
+        <item>Pulsa aquí</item>
+        <item>Semipermanente a color o francesa</item>
+        <item>Semipermanente con dibujo</item>
+        <item>Retirar esmaltado</item>
+        <item>Extensión uñas hasta el nº 2</item>
+        <item>Extensión uñas hasta el nº 2 con dibujo</item>
+        <item>Extensión uñas hasta el nº 3</item>
+        <item>Extensión uñas hasta el nº 3 con dibujo</item>
+    </string-array>
+
+
+    <string-array name="servicios_pedicura">
+        <item>Pulsa aquí</item>
+        <item>Semipermanente a color o francesa</item>
+        <item>Semipermanente con dibujo</item>
+        <item>Retirar esmaltado</item>
+    </string-array>
+
+
+    <string name="escogerehorario">ESCOGE UN HORARIO</string>
+    <string name="confirmar">CONFIRMAR CITA</string>
+    <!-- endregion -->
+
+    <!-- region: RECORDATORIO -->
+    <string name="proxima">Próxima cita:</string>
+
+    <!-- endregion -->
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "535323324556",
+    "project_id": "reservamanipedi",
+    "storage_bucket": "reservamanipedi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535323324556:android:8ce83f3ede2b40650c4ba9",
+        "android_client_info": {
+          "package_name": "com.mmr.reservamanipedi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHmd_5-ohrZbaRpXQXxt1EN-2WYBOrZU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

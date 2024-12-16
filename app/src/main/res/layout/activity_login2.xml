@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    android:orientation="vertical">
+
+    <!-- Banner (quedará en la parte superior) -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        app:srcCompat="@drawable/banner" />
+
+    <!-- Contenedor para los textos y botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Texto de bienvenida -->
+        <TextView
+            style="@style/invitacion"
+            android:layout_marginTop="16dp"
+            android:text="@string/bienvenida"
+            android:textColor="@color/neutral_dark_gray" />
+
+        <!-- Campos de inicio de sesión (correo y contraseña) -->
+        <EditText
+            android:id="@+id/TextEmail"
+            style="@style/registro"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/TextPassword"
+            style="@style/registro"
+            android:hint="@string/contraseña"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" />
+
+        <!-- Botón de inicio de sesión -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/buttonLogin"
+                style="@style/button_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/pink_pastel"
+                android:text="@string/login_button"
+                android:textAlignment="center"
+                android:onClick="login"/>
+
+        </LinearLayout>
+
+        <!-- Texto de olvido -->
+        <TextView
+            android:id="@+id/olvido"
+            style="@style/invitacion"
+            android:layout_marginTop="16dp"
+            android:text="@string/olvido"
+            android:textColor="@color/neutral_dark_gray"
+            android:textSize="10sp"
+            android:onClick="olvido"/>
+
+    </LinearLayout>
+</LinearLayout>

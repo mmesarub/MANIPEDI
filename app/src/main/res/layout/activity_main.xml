@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/background_primary"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/header"
+            android:layout_marginTop="30dp"
+            android:minHeight="48dp"
+            android:text="@string/empresa"
+            android:textColor="@color/neutral_dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/icono" />
+
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/button_vertical"
+                android:onClick="cita"
+                android:text="@string/cita"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/button_vertical"
+                android:onClick="recuerda"
+                android:text="@string/recuerda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button4" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/button_vertical"
+                android:onClick="eliminacita"
+                android:text="@string/eliminacita"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button5" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/footer"
+        android:minHeight="48dp"
+        android:onClick="cierre"
+        android:text="@string/cierresesion"
+        android:textColor="@color/neutral_dark_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
